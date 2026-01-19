@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { navigateToUrl } from "single-spa";
 import { LoginForm } from "@valoro/ui";
-import { saveUserProfile } from "../lib/user-service";
+import { saveUserProfile } from "@FIAP/util";
 import Placeholder from "../assets/placeholder.svg";
 import Logo from "../assets/logo-light.svg";
 
