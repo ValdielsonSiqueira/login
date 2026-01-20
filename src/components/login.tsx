@@ -95,6 +95,19 @@ export default function LoginPage() {
               errors={errors}
               onSubmit={handleSubmit}
             />
+            <div className="mt-4 text-center text-sm">
+              Não tem uma conta?{" "}
+              <a
+                href="/account"
+                className="underline underline-offset-4"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateToUrl("/account");
+                }}
+              >
+                Criar conta
+              </a>
+            </div>
           </div>
         </div>
       </div>
