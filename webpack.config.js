@@ -13,7 +13,8 @@ module.exports = (webpackConfigEnv, argv) => {
 
   // Remove valid rules that match CSS to avoid double-loading (css-loader conflict)
   defaultConfig.module.rules = defaultConfig.module.rules.filter((rule) => {
-    return !rule.test || !rule.test.toString().includes("css");
+    const ruleStr = rule.test ? rule.test.toString() : "";
+    return !ruleStr.includes("css") && !ruleStr.includes("svg");
   });
 
   return merge(defaultConfig, {
