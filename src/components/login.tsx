@@ -72,7 +72,12 @@ export default function LoginPage() {
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center md:justify-start">
           <a href="/" className="flex items-center font-medium">
-            <img src={Logo} alt="Logo" width={50} height={50} />
+            <img
+              src="https://raw.githubusercontent.com/ValdielsonSiqueira/login/21086310dc02009808f6d9f58f8f154fe8493bcd/src/assets/logo-light.svg"
+              alt="Logo"
+              width={50}
+              height={50}
+            />
             <span className="text-xl font-bold">Valoro</span>
           </a>
         </div>
@@ -95,7 +100,7 @@ export default function LoginPage() {
       </div>
       <div className="bg-muted relative hidden lg:!block overflow-hidden min-h-full">
         <img
-          src={Placeholder}
+          src="https://raw.githubusercontent.com/ValdielsonSiqueira/login/21086310dc02009808f6d9f58f8f154fe8493bcd/src/assets/placeholder.svg"
           alt="Imagem de login"
           className="absolute inset-0 h-full w-full object-cover"
         />
