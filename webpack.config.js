@@ -9,7 +9,6 @@ module.exports = (webpackConfigEnv, argv) => {
     projectName: "login",
     webpackConfigEnv,
     argv,
-    outputSystemJS: false,
   });
 
   // Remove valid rules that match CSS to avoid double-loading (css-loader conflict)
