@@ -7,3 +7,8 @@ declare module "@FIAP/util" {
 
   export function saveUserProfile(user: UserProfile): void;
 }
+
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
